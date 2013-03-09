@@ -15,10 +15,10 @@ FILE_NAME="buildpack-phantomjs-${VERSION}.tar.gz"
 BUILDPACK_PHANTOMJS_PACKAGE="https://github.com/${GITHUB_PROFILE}/${GITHUB_REPO}/${FILE_NAME}"
 
 mkdir -p $CACHE_DIR
-if ! [ -e $CACHE_DIR/$FILE_NAME ]; then
+#if ! [ -e $CACHE_DIR/$FILE_NAME ]; then
   echo "-----> Fetching PhantomJS buildpack binaries"
   curl $BUILDPACK_PHANTOMJS_PACKAGE -s -o $CACHE_DIR/$FILE_NAME
-fi
+#fi
 
 echo "-----> Extracting PhantomJS binaries" 
 mkdir -p $BUILD_DIR/vendor/phantomjs

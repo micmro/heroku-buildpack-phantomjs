@@ -8,7 +8,7 @@ Usage
 
 Example usage:
 
-    $ heroku create --buildpack http://github.com/stomita/heroku-buildpack-phantomjs.git
+    $ heroku create --buildpack http://github.com/micmro/heroku-buildpack-phantomjs.git
 
     $ git push heroku master
 
