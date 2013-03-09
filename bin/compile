@@ -6,13 +6,11 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 
 # config
-VERSION="1.8.1"
-GITHUB_PROFILE="micmro"
-GITHUB_REPO="heroku-buildpack-phantomjs"
+VERSION="1.8.2"
 
 # PhatomJS bin 
-FILE_NAME="buildpack-phantomjs-${VERSION}.tar.gz"
-BUILDPACK_PHANTOMJS_PACKAGE="https://github.com/${GITHUB_PROFILE}/${GITHUB_REPO}/raw/master/${FILE_NAME}"
+FILE_NAME="phantomjs-${VERSION}-linux-x86_64.tar.bz2"
+BUILDPACK_PHANTOMJS_PACKAGE="http://phantomjs.googlecode.com/files/${FILE_NAME}"
 
 mkdir -p $CACHE_DIR
 #if ! [ -e $CACHE_DIR/$FILE_NAME ]; then
