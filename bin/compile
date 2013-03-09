@@ -7,11 +7,12 @@ CACHE_DIR=$2
 
 # config
 VERSION="1.8.1"
-S3_BUCKET="stomita-buildpack-phantomjs"
+GITHUB_PROFILE="micmro"
+GITHUB_REPO="heroku-buildpack-phantomjs"
 
-# s3 packages
+# PhatomJS bin 
 FILE_NAME="buildpack-phantomjs-${VERSION}.tar.gz"
-BUILDPACK_PHANTOMJS_PACKAGE="http://${S3_BUCKET}.s3.amazonaws.com/${FILE_NAME}"
+BUILDPACK_PHANTOMJS_PACKAGE="https://github.com/${GITHUB_PROFILE}/${GITHUB_REPO}/${FILE_NAME}"
 
 mkdir -p $CACHE_DIR
 if ! [ -e $CACHE_DIR/$FILE_NAME ]; then
