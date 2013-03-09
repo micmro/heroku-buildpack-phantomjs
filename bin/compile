@@ -12,7 +12,7 @@ GITHUB_REPO="heroku-buildpack-phantomjs"
 
 # PhatomJS bin 
 FILE_NAME="buildpack-phantomjs-${VERSION}.tar.gz"
-BUILDPACK_PHANTOMJS_PACKAGE="https://github.com/${GITHUB_PROFILE}/${GITHUB_REPO}/${FILE_NAME}"
+BUILDPACK_PHANTOMJS_PACKAGE="https://github.com/${GITHUB_PROFILE}/${GITHUB_REPO}/raw/master/${FILE_NAME}"
 
 mkdir -p $CACHE_DIR
 #if ! [ -e $CACHE_DIR/$FILE_NAME ]; then
